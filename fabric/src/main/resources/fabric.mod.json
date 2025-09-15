@@ -8,8 +8,9 @@
     "${mod_author}"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/NavidRohim/fastghast",
+    "sources": "https://github.com/NavidRohim/fastghast",
+    "issues": "https://github.com/NavidRohim/fastghast/issues"
   },
   "license": "${license}",
   "icon": "fastghast.png",
@@ -19,6 +20,10 @@
       "me.brynview.navidrohim.fastghast.Fastghast"
     ]
   },
+  "mixins": [
+    "${mod_id}.mixins.json",
+    "${mod_id}.fabric.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=${fabric_loader_version}",
     "fabric-api": "*",
