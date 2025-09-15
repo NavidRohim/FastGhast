@@ -1,0 +1,31 @@
+plugins {
+    // see https://fabricmc.net/develop/ for new versions
+    id 'fabric-loom' version '1.11-SNAPSHOT' apply false
+    // see https://projects.neoforged.net/neoforged/moddevgradle for new versions
+    id 'net.neoforged.moddev' version '2.0.107' apply false
+}
+allprojects {
+    repositories {
+        maven {
+            name = "Mojang"
+            url = uri("https://libraries.minecraft.net")
+        }
+    }
+}
+repositories {
+
+    maven {
+        name = 'Fabric'
+        url = uri('https://maven.fabricmc.net')
+    }
+    // Optional cursemaven
+    maven {
+        name = "Curse Maven"
+        url "https://www.cursemaven.com"
+    }
+    // Optional Modrinth Maven
+    maven {
+        name = "Modrinth Maven"
+        url = "https://api.modrinth.com/maven"
+    }
+}
